@@ -1,0 +1,101 @@
+{
+  "nodes": {
+    "libfuse-fixes": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1721996235,
+        "narHash": "sha256-oOpOhw1a3nqqv5TXpCcmMGhwWPfsaxUv0DT7xLZkjj4=",
+        "owner": "bolives-hax",
+        "repo": "libfuse",
+        "rev": "66fab2b4805dd411d3f066d0c97e40582bf5c77c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bolives-hax",
+        "ref": "s390x-fix",
+        "repo": "libfuse",
+        "type": "github"
+      }
+    },
+    "nixlib": {
+      "locked": {
+        "lastModified": 1728781282,
+        "narHash": "sha256-hUP9oxmnOmNnKcDOf5Y55HQ+NnoT0+bLWHLQWLLw9Ks=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "16340f605f4e8e5cf07fd74dcbe692eee2d4f51b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "nixos-generators": {
+      "inputs": {
+        "nixlib": "nixlib",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1728867876,
+        "narHash": "sha256-NCyOA8WZNoojmXH+kBDrQj3LwvakYNzSc0h+LTXkmPE=",
+        "owner": "nix-community",
+        "repo": "nixos-generators",
+        "rev": "fdf142111597f6c6283cf5ffe092b6293a3911d0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixos-generators",
+        "type": "github"
+      }
+    },
+    "nixos-s390x": {
+      "inputs": {
+        "libfuse-fixes": "libfuse-fixes"
+      },
+      "locked": {
+        "lastModified": 1728914473,
+        "narHash": "sha256-QE5fGUxFlpAuMEbTCyfk25GRHkz+BiBvtmA8PFNAa1w=",
+        "owner": "bolives-hax",
+        "repo": "nixos-s390x",
+        "rev": "29b7c845f7257f8137398106fe21231a72c0c624",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bolives-hax",
+        "ref": "dbg-fm",
+        "repo": "nixos-s390x",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1728918918,
+        "narHash": "sha256-ySnPxvyfA6CJ4qMgR2Csoy8QDybbrZcTRF10e5IYbco=",
+        "owner": "bolives-hax",
+        "repo": "nixpkgs",
+        "rev": "903e764858a1b1a4d6ce49e8f3e0f75846c93cff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bolives-hax",
+        "ref": "nixos-s390x-overlay-multioption-fixes",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixos-generators": "nixos-generators",
+        "nixos-s390x": "nixos-s390x",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
